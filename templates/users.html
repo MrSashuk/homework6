@@ -1,0 +1,30 @@
+<h4 class="masthead-subheading mb-0">
+    Ось вам список всіх користувачів на сайті:
+    <br>
+
+
+{% for user in user_list %}
+
+
+<h4>{{user.name}} {{user.last_name}} {{user.phone}}</h4>
+
+{% endfor %}
+
+
+
+
+
+
+
+<br>
+<h3>Магазин продажу телефонів</h3>
+<h2>в наявності наступні моделі: </h2>
+
+{% for phone in phone_list %}
+{{phone.model}}
+{{phone.price}}
+<a href="">ЗАМОВИТИ</h4>a>
+{% endfor %}
+
+
+
